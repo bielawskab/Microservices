@@ -18,5 +18,5 @@ This project demonstrates the implementation of a microservices architecture usi
 ## Technologies & Dependencies
 * Service Registry: Spring Web, Eureka Server
 * Gateway: Spring Cloud Gateway, Eureka Discovery
-* Service 1: Spring Web, Eureka Discovery
-* Service 2: Eureka Discovery, Flyway, H2 Database
+* Internal Service: Spring Web, Eureka Discovery
+* External Service: Eureka Discovery, Flyway, H2 Database
