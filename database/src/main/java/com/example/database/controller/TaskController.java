@@ -34,7 +34,7 @@ public class TaskController {
     }
 
     @GetMapping("/{id}")
-    Task readTask(@PathVariable int id, @RequestBody Task task) {
+    Task readTask(@PathVariable int id1) {
         return task;
     }
 
