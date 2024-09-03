@@ -34,8 +34,8 @@ public class TaskController {
     }
 
     @GetMapping("/{id}")
-    ResponseEntity<Task> readTask(@PathVariable int id) {
-        return taskRepository.findById(id).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+    Task readTask(@PathVariable int id, @RequestBody Task task) {
+        return task;
     }
 
     @Transactional
