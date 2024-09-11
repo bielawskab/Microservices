@@ -35,7 +35,7 @@ public class TaskController {
 
     @GetMapping("/{id}")
     ResponseEntity<Task> readTask(@PathVariable int id, @RequestBody Task task) {
-        return ResponseEntity<>(task, HttpStatus.OK);
+        return ResponseEntity.noContent().build();
     }
 
     @Transactional
