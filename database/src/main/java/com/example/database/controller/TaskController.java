@@ -25,7 +25,7 @@ public class TaskController {
     @PostMapping
     ResponseEntity<?> createTask(@RequestBody @Valid Task toCreate) {
         Task result = taskRepository.save(toCreate);
-        return ResponseEntity.created(URI.create("/tasks/"+ result.getId())).body(result);
+        return ResponseEntity.created(URI.create("/task/"+ result.getId())).body(result);
     }
 
     @GetMapping
